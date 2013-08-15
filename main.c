@@ -1,7 +1,9 @@
 /* File main.c */
 #include <stdio.h>
 #include "code/huffman/types.h"
-#include "code/huffman/statistic.h"
+#include "code/huffman/tree.h"
+#include "code/huffman/auxiliary.h"
+#include "code/huffman/codes.h"
 
 int main(int argc, char **argv){
 
@@ -13,6 +15,8 @@ int main(int argc, char **argv){
 
     // test file
     make_tree(array, "data/stat.jpg");
+    huffman_codes(array);
+    display_tree(array);
 
 	return 0;
 }

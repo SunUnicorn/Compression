@@ -1,9 +1,11 @@
 #define MAX_UNSIGNED_INT 4294967295
 #define SIZE_OF_ARRAY 511
 
-typedef struct node {
+struct node {
 	unsigned int number;
+  unsigned short int code;
 	struct node *right;
 	struct node *left;
 	char sign;
-} NODE;
+};
+typedef struct node NODE;

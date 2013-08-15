@@ -1,1 +1,2 @@
-void make_tree(NODE *array, char *file_name);
+/* statistic.h */
+void char_statistic(NODE *array, char *file_name);
