@@ -4,6 +4,7 @@
 #include "code/huffman/tree.h"
 #include "code/huffman/auxiliary.h"
 #include "code/huffman/codes.h"
+#include "code/huffman/compress.h"
 
 int main(int argc, char **argv){
 
@@ -16,7 +17,7 @@ int main(int argc, char **argv){
     // test file
     make_tree(array, "data/stat.jpg");
     huffman_codes(array);
-    display_tree(array);
-
+    //display_tree(array);
+    compress_file(array, "data/stat.jpg");
 	return 0;
 }

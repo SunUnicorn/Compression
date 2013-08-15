@@ -26,7 +26,7 @@ void char_statistic(NODE *array, char *file_name){
 
 		while((ch = getc(fp)) != EOF)
 		array[ch].number++;
-		array[10].number--;
+//		array[10].number--;
 
 		for(i = 0; i < 256; i++)
 			if(array[i].number)
